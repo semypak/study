@@ -1,0 +1,132 @@
+/* Reset */
+body {
+    box-sizing: border-box;
+}
+
+body,
+ul,
+p,
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Typography */
+:root {
+    font-size: 10px;
+    line-height: 1.4;
+}
+
+body {
+    font-size: 1.5rem;
+}
+
+body {
+    background-color: #dbe9f6;
+}
+
+li {
+    list-style-type: none;
+}
+
+.wrapper {
+    box-shadow: inset 0 0 10px red;
+    max-width: 1208px;
+    margin: 0 auto;
+}
+
+.main-contents {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-cotents-side {
+    width: calc(100% / 3);
+}
+
+.main-contents-site-title {}
+
+.main-cotents-side ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 5px;
+    justify-content: center;
+}
+
+.main-cotents-side li {
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    width: 40%;
+    border-radius: 10px;
+}
+
+.main-cotents-side article ul li span {
+    display: inline-block;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.main-cotents-side article+.banner {
+    margin-top: 20px;
+    background-color: #7862bf;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.banner a {
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.banner-bg-img {
+    background-image: url(images/절주온_banner_img.png);
+    background-size: center;
+    background-position: right center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    text-indent: -9999px;
+}
+
+.main-contents-center {
+    width: calc(100% / 4);
+    border: 5px solid white;
+    border-radius: 15px;
+}
+
+.main-cotents-side article {
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px 0;
+}
+
+
+
+@media (max-width:1130px) {
+    .main-contents {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+}
